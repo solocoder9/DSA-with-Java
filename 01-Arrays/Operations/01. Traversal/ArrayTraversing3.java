@@ -1,0 +1,12 @@
+public class ArrayTraversing3 {
+    public static void main(String[] args) {
+        int[] arr = {10, 20, 30, 40, 50};
+
+        // Traversing array elements using while loop
+        int i = 0;
+        while(i < arr.length) {
+            System.out.print(arr[i] + " ");
+            i++;
+        }
+    }
+}
