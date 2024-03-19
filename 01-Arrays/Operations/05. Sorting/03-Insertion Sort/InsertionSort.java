@@ -1,26 +1,24 @@
 import java.util.Scanner;
 
-public class SelectionSort2 {
+public class InsertionSort {
     
-    // Method to sort an array using selection sort
-    static int[] selectionSort(int[] arr) {
+    // Method to sorting an array uing Insertion sort
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1)
+    static int[] insertionSort(int[] arr) {
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[minIndex]) {
-                    minIndex = j;
-                }
+        for (int i = 1; i < arr.length; i++) {
+            int currentElement = arr[i];
+            int j = i - 1;
+            while (j >= 0 && arr[j] > currentElement) {
+                arr[j + 1] = arr[j];
+                j--;
             }
-
-            // Swap
-            int temp = arr[minIndex];
-            arr[minIndex] = arr[i];
-            arr[i] = temp;
-            
+            // Place to right position
+            arr[j + 1] = currentElement;
         }
-        return arr;
 
+        return arr;
     }
 
     public static void main(String[] args) {
@@ -36,7 +34,7 @@ public class SelectionSort2 {
             arr[i] = sc.nextInt();
         }
 
-        selectionSort(arr);
+        insertionSort(arr);
 
         // Print the sorted array
         for (int i = 0; i < arr.length; i++) {

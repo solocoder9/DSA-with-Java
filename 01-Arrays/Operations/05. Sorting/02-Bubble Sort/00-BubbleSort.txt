@@ -22,3 +22,5 @@ Example: -  Unsorted array = [20, 8, 5, 10, 7]
             [5, 8, 7, 10, 20]   8 is largest (swap - (8, 7))
             
     i = 3   [5, 7, 8, 10, 20]   5 is smallest (no swap - (5, 7))
+
+            Sorted array = [5, 7, 8, 10, 20]

@@ -5,7 +5,7 @@ public class SelectionSort3 {
     // Method to sort an array using Selection Sort
     // Time Complexity: O(n^2)
     // Scace Complexity: O(1)
-    static int[] selectionSort(int[] arr, int size) {
+    static int[] selectionSort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;
@@ -47,7 +47,7 @@ public class SelectionSort3 {
         }
 
         // Sort the array
-        selectionSort(arr, size);
+        selectionSort(arr);
 
         // Print the sorted array
         for (int i = 0; i < arr.length; i++) {

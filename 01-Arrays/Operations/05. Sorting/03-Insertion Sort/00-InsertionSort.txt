@@ -1,0 +1,25 @@
+Insertion Sort
+--------------
+-> Insertion sort is a sorting algorithm in which the elements are 
+   transferred one at a time to the right position.
+
+    Time Complexity: O(n^2) - Quadratic time
+    Space Complexity: O(1)  - Constant space
+
+
+Example: -  Unsorted array = [20, 8, 5, 10, 7]
+
+    i = 1   [20 | 8, 5, 10, 7]  Sorted element: 20 & Current element: 8
+            [8, 20 | 5, 10, 7]
+    
+    i = 2   [8, 20 | 5, 10, 7]  current element 5
+            [5, 8, 20 | 10, 7]
+
+    i = 3   [5, 8, 20 | 10, 7]  current element 10
+            [5, 8, 10, 20 | 7]
+
+    i = 4   [5, 8, 10, 20 | 7]  current element 7
+            [5, 7, 8, 10, 20]
+
+
+            Sorted array = [5, 7, 8, 10, 20]

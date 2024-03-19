@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class SelectionSort {
     
     // Method to sort an array using selection sort
-    static int[] selectionSort(int[] arr, int size) {
+    static int[] selectionSort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -32,7 +32,7 @@ public class SelectionSort {
             arr[i] = sc.nextInt();
         }
 
-        selectionSort(arr, size);
+        selectionSort(arr);
 
         // Print the sorted array
         for (int i = 0; i < arr.length; i++) {

@@ -5,7 +5,7 @@ public class BubbleSort2 {
     // Method to sort an array using optimized Bubble Sort
     // Time Complexity: O(n^2)
     // Space Complexity: O(1)
-    static int[] bubbleSort(int[] arr, int size) {
+    static int[] bubbleSort(int[] arr) {
 
         boolean swapped;
         
@@ -42,7 +42,7 @@ public class BubbleSort2 {
             arr[i] = sc.nextInt();
         }
 
-        bubbleSort(arr, size);
+        bubbleSort(arr);
 
         // Print the sorted array
         for (int i = 0; i < arr.length; i++) {

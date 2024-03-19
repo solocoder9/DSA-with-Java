@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class BubbleSort {
     
     // Method to sort an array using Bubble Sort
-    static int[] bubbleSort(int[] arr, int size) {
+    static int[] bubbleSort(int[] arr) {
         
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -31,7 +31,7 @@ public class BubbleSort {
             arr[i] = sc.nextInt();
         }
 
-        bubbleSort(arr, size);
+        bubbleSort(arr);
 
         // Print the sorted array
         for (int i = 0; i < arr.length; i++) {
