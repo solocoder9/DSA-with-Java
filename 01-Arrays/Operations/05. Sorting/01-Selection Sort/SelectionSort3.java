@@ -16,7 +16,7 @@ public class SelectionSort3 {
             }
 
             /*
-             * Swap if the minimum element('arr[minIndex]'') is found
+             * Swap if the minimum element('arr[minIndex]') is found
              * to be different from current element at index - 'i'
              * - This optimization reduces the nmber of uncessary swaps,
              * making the algorithms more efficient.

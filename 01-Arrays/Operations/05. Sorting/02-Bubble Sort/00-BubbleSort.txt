@@ -1,0 +1,24 @@
+Bubble Sort
+--------------
+-> Bubble sort is one of the sorting algorithms that works by repeatedly swapping
+   the adjacent elements of the array if they are not in sorted order.
+
+    Time Complexity: O(n^2) - Quadratic time
+    Space Complexity: O(1)  - Constant space
+
+
+Example: -  Unsorted array = [20, 8, 5, 10, 7]
+
+    i = 0   [20, 8, 5, 10, 7]   20 is largest (swap - (20 , 8))
+            [8, 20, 5, 10, 7]   20 is largest (swap - (20 , 5))
+            [8, 5, 20, 10, 7]   20 is largest (swap - (20 , 10))
+            [8, 5, 10, 20, 7]   20 is largest (swap - (20, 7))
+
+    i = 1   [8, 5, 10, 7, 20]   8 is largest (swap - (8, 5))
+            [5, 8, 10, 7, 20]   8 is smallest (no swap- (8, 10))
+            [5, 8, 10, 7, 20]   10 is largest (swap - (10, 7))
+
+    i = 2   [5, 8, 7, 10, 20]   5 is smallest (no swap - (5, 8))  
+            [5, 8, 7, 10, 20]   8 is largest (swap - (8, 7))
+            
+    i = 3   [5, 7, 8, 10, 20]   5 is smallest (no swap - (5, 7))
