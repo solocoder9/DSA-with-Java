@@ -1,0 +1,19 @@
+Selection Sort
+--------------
+-> Selection sort is one of the sorting algorithms that works by repetedly
+  finding the minimum element from the unsorted part of the array and putting
+  it at the beginning of the unsorted array.
+
+    Time Complexity: O(n^2) - Quadratic time
+    Space Complexity: O(1)  - Constant space
+
+
+Example: -  Unsorted array = [20, 8, 5, 10, 7]
+
+    i = 0   [20, 8, 5, 10, 7]   5 is smallest (swap - (20 , 5))
+    i = 1   [5, 8, 20, 10, 7]   7 is smallest (swap - (8 , 7))
+    i = 2   [5, 7, 20, 10, 8]   8 is smallest (swap - (20 , 8))
+    i = 3   [5, 7, 8, 10, 20]   no swap
+
+            Sorted array = [5, 7, 8, 10, 20]
+
