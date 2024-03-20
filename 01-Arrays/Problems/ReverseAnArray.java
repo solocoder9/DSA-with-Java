@@ -3,7 +3,7 @@ import java.util.Scanner;
 class ReverseAnArray {
     
     // Method to reverse the array
-    static void reverse(int[] arr, int size) {
+    static int[] reverse(int[] arr) {
         
         int low = 0;
         int high = arr.length - 1;
@@ -18,10 +18,7 @@ class ReverseAnArray {
             }
         }
 
-        // Print the reversed array elements
-        for(int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        return arr;
     }
 
     public static void main(String[] args) {
@@ -37,8 +34,11 @@ class ReverseAnArray {
             arr[i] = sc.nextInt();
         }
 
-        reverse(arr, size);
+        reverse(arr);
 
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
         sc.close();
     }
 }
