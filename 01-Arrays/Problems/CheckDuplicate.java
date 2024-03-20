@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CheckDuplicate {
     
     // Method to print the duplicate element of the array
-    static void checkDuplicate(int[] arr, int size) {
+    static void checkDuplicate(int[] arr) {
 
         boolean hasDuplicate = false;
         int printed = 0;
@@ -40,7 +40,7 @@ public class CheckDuplicate {
             arr[i] = sc.nextInt();
         }
 
-        checkDuplicate(arr, size);
+        checkDuplicate(arr);
 
         sc.close();
     }

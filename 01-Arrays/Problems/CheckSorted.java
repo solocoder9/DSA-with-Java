@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CheckSorted {
     
     // Method to check the array is sorted or not (Ascending)
-    static void checkArray(int[] arr, int size) {
+    static void checkArray(int[] arr) {
         
         int temp = arr[0];
         int count = 0;
@@ -36,7 +36,7 @@ public class CheckSorted {
             arr[i] = sc.nextInt();
         }
 
-        checkArray(arr, size);
+        checkArray(arr);
 
         sc.close();
     }

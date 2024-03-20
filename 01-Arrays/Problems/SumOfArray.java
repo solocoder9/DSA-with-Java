@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class SumOfArray {
     
     // Method to calculate the sum of the array
-    static void calSum(int[] arr, int size) {
+    static int calSum(int[] arr) {
         int sum = 0;
 
         for(int i = 0; i < arr.length; i++) {
             sum += arr[i];
         }
 
-        System.out.println("Sum of the array is: " + sum);
+        return sum;
     }
 
     public static void main(String[] args) {
@@ -26,7 +26,7 @@ public class SumOfArray {
             arr[i] = sc.nextInt();
         }
 
-        calSum(arr, size);
+        System.out.println(calSum(arr));
 
         sc.close();
     }

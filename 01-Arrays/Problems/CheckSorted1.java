@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class CheckSorted1 {
     
     // Method to check teh array is sorted or not 
-    static boolean checkArray(int[] arr, int size) {
+    static boolean checkArray(int[] arr) {
 
         for(int i = 1; i < arr.length; i++) {
             if(arr[i] < arr[i-1]) {
@@ -26,7 +26,7 @@ public class CheckSorted1 {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println(checkArray(arr, size));
+        System.out.println(checkArray(arr));
 
         sc.close();
     }
