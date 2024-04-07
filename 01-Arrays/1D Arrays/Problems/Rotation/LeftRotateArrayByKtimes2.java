@@ -48,8 +48,6 @@ public class LeftRotateArrayByKtimes2 {
         System.out.print("Enter how many times you want to rotate left: ");
         int k = sc.nextInt();
 
-        // Time Complexity: O(n)
-        // Space Complexity: O(k)
         leftRotate(arr, k);
 
         // Output
