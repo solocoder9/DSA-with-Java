@@ -1,9 +1,11 @@
 import java.util.Scanner;
 
 public class CountVowels {
-    
-    // Method to count vowels in a string 
-    static int countCharacters(String str) {
+
+    // Time Complexity: O(n) where n is the number of characters in the string
+    // Space Complexity: O(1)
+    // Method to count vowels in a string
+    static int countVowels(String str) {
 
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
@@ -21,7 +23,7 @@ public class CountVowels {
         System.out.print("Enter any string value: ");
         String str = sc.nextLine();
 
-        System.out.println("Vowels count is: " + countCharacters(str));
+        System.out.println("Vowels count is: " + countVowels(str));
 
         sc.close();
     }

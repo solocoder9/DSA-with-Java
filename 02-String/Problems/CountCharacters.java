@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
 public class CountCharacters {
-    
-    // Method to count characters in a string 
+
+    // Time Complexity: O(n) where n is the number of characters in the string
+    // Space Complexity: O(1)
+    // Method to count characters in a string
     static int countCharacters(String str) {
 
         int count = 0;

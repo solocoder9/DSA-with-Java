@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class PalindromeString {
-    
+
+    // Time Complexity: O(n) where n is the length of the string
+    // Space Complexity: O(n) for the reversed string 'rev'
     // Method to check if the string is palindrome or not
     static boolean checkPalindrome(String str) {
 
@@ -15,16 +17,15 @@ public class PalindromeString {
         return str.equals(rev);
     }
 
-    public static void main(String[] arsg) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter any string value: ");
         String str = sc.nextLine();
 
-        if(checkPalindrome(str)) {
+        if (checkPalindrome(str)) {
             System.out.println("Palindrome");
-        }
-        else {
+        } else {
             System.out.println("Not palindrome");
         }
 

@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class SmallestElement {
 
+    // Time Complexity: O(n) (where n is the size of the array)
+    // Space Complexity: O(1)
     // Method to find the smallest element in the array
     public static int findSmallest(int[] arr) {
 

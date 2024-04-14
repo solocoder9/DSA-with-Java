@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class RemoveDuplicate {
     
-    // Method to remove duplicate elements
+    // Time Complexity: O(n^2) (due to sorting)
+    // Space Complexity: O(1)
     static int removeDuplicate(int[] arr) {
 
         // sorting an array 
@@ -31,7 +32,7 @@ public class RemoveDuplicate {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter size of the arr: ");
+        System.out.print("Enter size of the array: ");
         int size = sc.nextInt();
 
         int[] arr = new int[size];
@@ -39,8 +40,6 @@ public class RemoveDuplicate {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-
-        // removeDuplicate(arr);
 
         for (int i = 0; i < removeDuplicate(arr); i++) {
             System.out.print(arr[i] + " ");

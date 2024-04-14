@@ -2,10 +2,14 @@ import java.util.Scanner;
 
 public class PrintDuplicateElements {
 
+    // Time Complexity: O(n^2)
+    // Space Complexity: O(1)
+    // method to print duplicate elements af an array
     static void printDuplicate(int[] arr) {
-        boolean ifPresent = false;
 
+        boolean ifPresent = false;
         System.out.print("Duplicates: ");
+        
         // Iterate through the array
         for (int i = 0; i < arr.length - 1; i++) {
             // Check if the current element is a duplicate

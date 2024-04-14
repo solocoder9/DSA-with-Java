@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class SecondLargestElement2 {
     
     // Method to sorting the array elements
+    // Time Complexity: O(n^2) (where n is the size of the array) due to the nested loops for bubble sort.
+    // Space Complexity: O(1) as it sorts the array in-place without using any additional space.
     static void sortArr(int[] arr, int size) {
 
         int temp = 0;
@@ -19,6 +21,8 @@ public class SecondLargestElement2 {
     }
 
     // Method to find the second largest
+    // Time Complexity: O(n^2) due to the sorting process in the `sortArr` method.
+    // Space Complexity: O(1) as it calls the `sortArr` method, which sorts the array in-place.
     static int secondLargest(int[] arr, int size) {
         sortArr(arr, size);
         int largest = arr[0];

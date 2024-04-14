@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class PrintReverseString {
-    
+
+    // Time Complexity: O(n) where n is the length of the string
+    // Space Complexity: O(1) as we are not using any additional space
     // Method to print reverse String
     static void printReverse(String str) {
 

@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class SecondLargestElement {
     
+    // Time Complexity: O(n) (where n is the size of the array)
+    // Space Complexity: O(1)
     // Method to find largest element of the array
     static int findLargest(int[] arr, int size) {
         int largest = 0;
@@ -14,6 +16,8 @@ public class SecondLargestElement {
         return largest;
     }
 
+    // Time Complexity: O(n) (where n is the size of the array)
+    // Space Complexity: O(1)
     // Method to find the second largest element of the array
     static int findSecondLargest(int[] arr, int size) {
         int largest = findLargest(arr, size);
@@ -46,4 +50,3 @@ public class SecondLargestElement {
         sc.close();
     }
 }
- 

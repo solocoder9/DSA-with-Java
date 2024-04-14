@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class SecondLargest {
     
+    // Time Complexity: O(n) (where n is the size of the array)
+    // Space Complexity: O(1)
     // Method to find second largest element from an array
     static void printLargest(int[] arr, int size) {
 
         int largest = Integer.MIN_VALUE;
         int secondLargest = Integer.MIN_VALUE;
-        
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > largest) {
@@ -18,7 +19,6 @@ public class SecondLargest {
                 secondLargest = arr[i];
             }
         }
-
 
         System.out.println(secondLargest);
     }

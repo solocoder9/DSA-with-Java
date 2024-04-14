@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class LargestElementIndex2 {
+    
+    // Time Complexity: O(n) (where n is the size of the array)
+    // Space Complexity: O(1)
     static int getLargest(int[] arr, int size) {
         int res = 0;
         for(int i = 1; i < arr.length; i++) {

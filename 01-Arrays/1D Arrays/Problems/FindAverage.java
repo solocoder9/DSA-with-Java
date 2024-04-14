@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class FindAverage {
     
+    // Time Complexity: O(n) where n is the number of elements in the array
+    // Space Complexity: O(1)
     // Method to find the average of the array
     static double findAverage(int[] arr) {
         int sum = 0;
@@ -22,11 +24,12 @@ public class FindAverage {
         int[] arr = new int[size];
 
         // Input
+        System.out.println("Enter the elements of the array:");
         for(int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println(findAverage(arr));
+        System.out.println("Average of the array is: " + findAverage(arr));
 
         sc.close();
     }

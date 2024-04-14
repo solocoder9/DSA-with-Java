@@ -2,12 +2,14 @@ import java.util.Scanner;
 
 public class MaximumSum {
    
+    // Time Complexity: O(n^2) where n is the number of elements in the array
+    // Space Complexity: O(1)
     // Method to calculate maximum sum of a array
     static int maximumSum(int[] arr) {
 
         int maxSum = Integer.MIN_VALUE;
 
-        for (int i= 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {
             int currentSum = 0;
             for (int j = i; j < arr.length; j++) {
                 currentSum += arr[j];
@@ -28,12 +30,13 @@ public class MaximumSum {
 
         int[] arr = new int[size];
 
-        // input
+        // Input
+        System.out.println("Enter the elements of the array:");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
-        System.out.println(maximumSum(arr));
+        System.out.println("Maximum sum of the array is: " + maximumSum(arr));
 
         sc.close();
     }

@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class MaximumDifference2 {
 
-    // Method to print the maxinmum differences
+    // Time Complexity: O(n) where n is the number of elements in the array
+    // Space Complexity: O(1)
+    // Method to print the maximum difference
     static void printMaxDiff(int[] arr) {
 
         int maxDiff = arr[1] - arr[0];
@@ -24,7 +26,8 @@ public class MaximumDifference2 {
 
         int[] arr = new int[size];
 
-        // input
+        // Input
+        System.out.println("Enter the elements of the array:");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
@@ -33,5 +36,4 @@ public class MaximumDifference2 {
 
         sc.close();
     }
-    
 }

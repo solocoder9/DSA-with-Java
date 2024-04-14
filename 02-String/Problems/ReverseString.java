@@ -2,24 +2,27 @@ import java.util.Scanner;
 
 public class ReverseString {
     
-    // Method to reverse a string
-    static String reverseString(String str) {
-
-        String rev = "";
-        for (int i = str.length() - 1; i >= 0; i--) {
-            rev += str.charAt(i);
-        }
-
-        return rev;
+    // Time Complexity: O(n), where n is the length of the input string
+    // Space Complexity: O(n), for the StringBuilder object
+    // Method to check if the string is palindrome or not
+    static boolean checkPalindrome(String str) {
+        StringBuilder sb = new StringBuilder(str);
+        sb.reverse();
+        return str.equals(sb.toString());
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter any string value: ");
+        System.out.print("Enter the string value: ");
         String str = sc.nextLine();
 
-        System.out.println(reverseString(str));
+        if(checkPalindrome(str)) {
+            System.out.println("Palindrome");
+        }
+        else {
+            System.out.println("Not palindrome");
+        }
 
         sc.close();
     }

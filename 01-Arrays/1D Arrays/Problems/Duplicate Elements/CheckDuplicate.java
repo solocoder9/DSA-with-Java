@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class CheckDuplicate {
     
+    // Time Complexity: O(n^2), where n is the length of the array
+    // Space Complexity: O(1)
     // Method to print the duplicate element of the array
     static void checkDuplicate(int[] arr) {
-
         boolean hasDuplicate = false;
         int printed = 0;
 

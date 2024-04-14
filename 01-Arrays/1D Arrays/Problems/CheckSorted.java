@@ -2,25 +2,25 @@ import java.util.Scanner;
 
 public class CheckSorted {
     
-    // Method to check the array is sorted or not (Ascending)
+    // Time Complexity: O(n) where n is the number of elements in the array
+    // Space Complexity: O(1)
+    // Method to check if the array is sorted in ascending order
     static void checkArray(int[] arr) {
         
-        int temp = arr[0];
-        int count = 0;
+        boolean sorted = true;
 
         for(int i = 1; i < arr.length; i++) {
-            if(arr[i] < temp) {
-                count++;
+            if(arr[i] < arr[i - 1]) {
+                sorted = false;
                 break;
             }
         }
-        if(count != 0) {
+
+        if(sorted) {
+            System.out.println("Array is sorted");
+        } else {
             System.out.println("Array is not sorted");
         }
-        else {
-            System.out.println("Array is sorted");
-        }
-        
     }
 
     public static void main(String[] args) {
@@ -32,6 +32,7 @@ public class CheckSorted {
         int[] arr = new int[size];
 
         // Input
+        System.out.println("Enter the elements of the array:");
         for(int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
