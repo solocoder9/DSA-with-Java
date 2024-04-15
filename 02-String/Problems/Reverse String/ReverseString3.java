@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ReverseString1 {
+public class ReverseString3 {
 
     // Time Complexity: O(n) where n is the length of the string
     // Space Complexity: O(n) where n is the length of the string (due to creating a new string)
