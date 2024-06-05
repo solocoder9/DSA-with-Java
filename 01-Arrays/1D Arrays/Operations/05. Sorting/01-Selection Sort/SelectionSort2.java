@@ -1,9 +1,12 @@
+// Selection Sort
+// Optimized approach
+
 import java.util.Scanner;
 
 public class SelectionSort2 {
-    
+
     // Method to sort an array using selection sort
-    static int[] selectionSort(int[] arr) {
+    public static int[] selectionSort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;
@@ -17,7 +20,7 @@ public class SelectionSort2 {
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;
-            
+
         }
         return arr;
 
@@ -31,7 +34,8 @@ public class SelectionSort2 {
 
         int[] arr = new int[size];
 
-        // Input
+        // Input elements
+        System.out.println("Enter the elements of the array: ");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }

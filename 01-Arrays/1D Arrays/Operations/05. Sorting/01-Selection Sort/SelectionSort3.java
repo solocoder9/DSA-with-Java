@@ -1,3 +1,6 @@
+// Selection Sort
+// More optimized appraoch
+
 import java.util.Scanner;
 
 public class SelectionSort3 {
@@ -5,7 +8,7 @@ public class SelectionSort3 {
     // Method to sort an array using Selection Sort
     // Time Complexity: O(n^2)
     // Scace Complexity: O(1)
-    static int[] selectionSort(int[] arr) {
+    public static int[] selectionSort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;
@@ -40,7 +43,7 @@ public class SelectionSort3 {
 
         int[] arr = new int[size];
 
-        // Input
+        // Input elements
         System.out.print("Enter the elements of the array: ");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
