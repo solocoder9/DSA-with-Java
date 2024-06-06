@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SecondLargestElement2 {
+public class SecondLargest3 {
     
     // Method to sorting the array elements
     // Time Complexity: O(n^2) (where n is the size of the array) due to the nested loops for bubble sort.
