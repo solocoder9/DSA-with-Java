@@ -1,22 +1,30 @@
+// Java program to find the largest element in an array
+// Brute force approach
+
 import java.util.Scanner;
 
 public class LargestElement {
 
-    // Time Complexity: O(n) (where n is the size of the array)
-    // Space Complexity: O(1)
-    // Method to find the largest element in the array
+    // Method to find the largest element in an array
+    // Time Complexity: O(n2)
+    // Space Complexity: O(n)
     public static int findLargest(int[] arr) {
-        int largest = arr[0];
 
-        for(int i = 1; i < arr.length; i++) {
-            if(arr[i] > largest) {
-                largest = arr[i];
+        // Sorting the array using selection sort
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[i]) {
+                    int temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
             }
         }
 
-        return largest;
-    }  
-    
+        return arr[arr.length - 1];
+    }
+
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -25,14 +33,13 @@ public class LargestElement {
 
         int[] arr = new int[size];
 
-        // Input
-        System.out.println("Enter the elements of the array:");
-        for(int i = 0; i < arr.length; i++) {
+        // For inputs
+        System.out.print("Enter elements of the array: ");
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
-        // Calling method to find the largest element 
-        System.out.println("Largest element of the array is " + findLargest(arr));
+        System.out.println("Largest element in the array is: " + findLargest(arr));
 
         sc.close();
     }
