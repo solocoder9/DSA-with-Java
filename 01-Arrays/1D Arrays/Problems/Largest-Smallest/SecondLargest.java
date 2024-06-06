@@ -1,28 +1,40 @@
+// Java program to find the second largest element in an array
+// Brute force approach
+
 import java.util.Scanner;
 
 public class SecondLargest {
-    
-    // Time Complexity: O(n) (where n is the size of the array)
+
+    // Method to find the second largest element in an array
+    // Time Complexity: O(n^2)
     // Space Complexity: O(1)
-    // Method to find second largest element from an array
-    static void printLargest(int[] arr, int size) {
+    public static int findSecondLargest(int[] arr) {
 
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
-
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > largest) {
-                secondLargest = largest;
-                largest = arr[i];
-            }
-            else if (arr[i] > secondLargest && arr[i] != largest) {
-                secondLargest = arr[i];
+        // Sorting the array using Selection sort
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[i]) {
+                    int temp = arr[j];
+                    arr[j] = arr[i];
+                    arr[i] = temp;
+                }
             }
         }
 
-        System.out.println(secondLargest);
+        int largest = arr[arr.length - 1];
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int i = arr.length - 2; i >= 0; i--) {
+            if (arr[i] != largest) {
+                secondLargest = arr[i];
+                break;
+            }
+        }
+
+        return secondLargest;
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -31,13 +43,14 @@ public class SecondLargest {
 
         int[] arr = new int[size];
 
-        // Input
+        // Input elements
+        System.out.println("Enter the elements of the array: ");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
-        printLargest(arr, size);
-
+        // Finding and printing the second largest element
+        System.out.println("Second largest element in the array is: " + findSecondLargest(arr));
         sc.close();
     }
 }
