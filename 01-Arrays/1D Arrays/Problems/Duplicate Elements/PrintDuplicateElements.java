@@ -5,11 +5,11 @@ public class PrintDuplicateElements {
     // Time Complexity: O(n^2)
     // Space Complexity: O(1)
     // method to print duplicate elements af an array
-    static void printDuplicate(int[] arr) {
+    public static void printDuplicate(int[] arr) {
 
         boolean ifPresent = false;
         System.out.print("Duplicates: ");
-        
+
         // Iterate through the array
         for (int i = 0; i < arr.length - 1; i++) {
             // Check if the current element is a duplicate
@@ -41,6 +41,7 @@ public class PrintDuplicateElements {
         }
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
