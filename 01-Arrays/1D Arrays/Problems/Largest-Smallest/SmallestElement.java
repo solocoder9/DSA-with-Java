@@ -9,15 +9,16 @@ public class SmallestElement {
 
         int smallest = arr[0];
 
-        for(int i = 1; i < arr.length; i++) {
-            if(arr[i] < smallest) {
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < smallest) {
                 smallest = arr[i];
             }
         }
 
         return smallest;
-    }  
-    
+    }
+
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -26,8 +27,8 @@ public class SmallestElement {
 
         int[] arr = new int[size];
 
-        // Input 
-        for(int i = 0; i < arr.length; i++) {
+        // Input
+        for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
