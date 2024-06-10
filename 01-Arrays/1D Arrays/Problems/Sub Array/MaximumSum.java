@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 public class MaximumSum {
-   
+
     // Time Complexity: O(n^2) where n is the number of elements in the array
     // Space Complexity: O(1)
     // Method to calculate maximum sum of a array
-    static int maximumSum(int[] arr) {
+    public static int maximumSum(int[] arr) {
 
         int maxSum = Integer.MIN_VALUE;
 
@@ -22,6 +22,7 @@ public class MaximumSum {
         return maxSum;
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
