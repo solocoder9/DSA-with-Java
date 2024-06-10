@@ -5,7 +5,7 @@ public class LeftRotateArrayByKtimes3 {
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     // Method to reverse the array
-    static void reverse(int[] arr, int start, int end) {
+    public static void reverse(int[] arr, int start, int end) {
         while (start < end) {
             int temp = arr[start];
             arr[start] = arr[end];
