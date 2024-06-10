@@ -18,7 +18,7 @@ public class LeftRotateArrayByKtimes3 {
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     // Method to left rotate the array k times
-    static void leftRotate(int[] arr, int k) {
+    public static void leftRotate(int[] arr, int k) {
         k = k % arr.length; // To handle cases where k is greater than n
 
         reverse(arr, 0, k - 1);
