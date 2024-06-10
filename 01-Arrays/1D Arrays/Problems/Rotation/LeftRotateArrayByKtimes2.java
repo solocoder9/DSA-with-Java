@@ -25,7 +25,7 @@ public class LeftRotateArrayByKtimes2 {
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     // Method to print array elements
-    static void printArr(int[] arr) {
+    public static void printArr(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
