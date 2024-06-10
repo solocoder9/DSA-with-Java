@@ -5,7 +5,7 @@ public class LeftRotateArrayByKtimes2 {
     // Time Complexity: O(n)
     // Space Complexity: O(k)
     // Method to left rotate array k times
-    static void leftRotate(int[] arr, int k) {
+    public static void leftRotate(int[] arr, int k) {
 
         int[] temp = new int[k]; // O(k) space
 
