@@ -29,12 +29,13 @@ public class LeftRotateArrayByKtimes3 {
     // Time Complexity: O(n)
     // Space Complexity: O(1)
     // Method to print array elements
-    static void printArr(int[] arr) {
+    public static void printArr(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
