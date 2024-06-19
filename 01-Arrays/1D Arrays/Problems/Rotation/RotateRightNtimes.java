@@ -1,11 +1,12 @@
 import java.util.Scanner;
 
 public class RotateRightNtimes {
-    
-    // Time Complexity: O(n * d) where n is the number of elements in the array and d is the number of rotations
+
+    // Time Complexity: O(n * d) where n is the number of elements in the array and
+    // d is the number of rotations
     // Space Complexity: O(1)
-    // Method to rotate right n times 
-    static int[] rotateRightNtimes(int[] arr, int n) {
+    // Method to rotate right n times
+    public static int[] rotateRightNtimes(int[] arr, int n) {
 
         n = n % arr.length; // to handle cases where n is greater than array length
 
@@ -20,6 +21,7 @@ public class RotateRightNtimes {
         return arr;
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -28,7 +30,7 @@ public class RotateRightNtimes {
 
         int[] arr = new int[size];
 
-        // Input 
+        // Input
         System.out.println("Enter the elements of the array:");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
