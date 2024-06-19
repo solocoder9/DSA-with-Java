@@ -4,7 +4,7 @@
 import java.util.Scanner;
 
 public class SelectionSort3 {
-    
+
     // Method to sort an array using Selection Sort
     // Time Complexity: O(n^2)
     // Scace Complexity: O(1)
@@ -32,9 +32,9 @@ public class SelectionSort3 {
         }
 
         return arr;
-
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
