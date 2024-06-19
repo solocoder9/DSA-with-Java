@@ -19,9 +19,9 @@ public class SelectionSort {
         }
 
         return arr;
-
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
