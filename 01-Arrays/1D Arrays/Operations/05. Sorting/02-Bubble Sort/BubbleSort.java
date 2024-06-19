@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
 public class BubbleSort {
-    
+
     // Method to sort an array using Bubble Sort
-    static int[] bubbleSort(int[] arr) {
-        
+    public static int[] bubbleSort(int[] arr) {
+
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
-                if (arr[j] > arr[j+1]) {
+                if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
                 }
             }
         }
@@ -18,6 +18,7 @@ public class BubbleSort {
         return arr;
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
