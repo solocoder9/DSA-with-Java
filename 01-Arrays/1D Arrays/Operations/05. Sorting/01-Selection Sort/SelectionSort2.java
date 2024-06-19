@@ -20,12 +20,12 @@ public class SelectionSort2 {
             int temp = arr[minIndex];
             arr[minIndex] = arr[i];
             arr[i] = temp;
-
         }
-        return arr;
 
+        return arr;
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
