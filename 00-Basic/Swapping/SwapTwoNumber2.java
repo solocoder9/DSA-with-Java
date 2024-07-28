@@ -12,6 +12,7 @@ public class SwapTwoNumber2 {
         System.out.println("b: " + b);
     }
 
+    // Driver code
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
