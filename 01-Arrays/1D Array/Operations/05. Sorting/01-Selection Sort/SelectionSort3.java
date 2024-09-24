@@ -8,7 +8,7 @@ public class SelectionSort3 {
     // Method to sort an array using Selection Sort
     // Time Complexity: O(n^2)
     // Scace Complexity: O(1)
-    public static int[] selectionSort(int[] arr) {
+    public static void selectionSort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;
@@ -30,8 +30,6 @@ public class SelectionSort3 {
                 arr[i] = temp;
             }
         }
-
-        return arr;
     }
 
     // Driver code
