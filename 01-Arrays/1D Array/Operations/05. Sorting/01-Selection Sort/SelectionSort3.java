@@ -1,5 +1,5 @@
 // Selection Sort
-// More optimized appraoch
+// Efficient appraoch
 
 import java.util.Scanner;
 
