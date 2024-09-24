@@ -1,5 +1,5 @@
 // Selection Sort
-// Efficient approach
+// Optimal approach
 // Bidirectional Selection Sort(Cocktail Sort)
 
 import java.util.Scanner;
