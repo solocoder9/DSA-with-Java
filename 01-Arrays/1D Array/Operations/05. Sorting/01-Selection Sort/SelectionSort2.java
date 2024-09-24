@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class SelectionSort2 {
 
     // Method to sort an array using selection sort
-    public static int[] selectionSort(int[] arr) {
+    public static void selectionSort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
             int minIndex = i;
@@ -21,8 +21,6 @@ public class SelectionSort2 {
             arr[minIndex] = arr[i];
             arr[i] = temp;
         }
-
-        return arr;
     }
 
     // Driver code
