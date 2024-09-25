@@ -7,7 +7,7 @@ public class BubbleSort {
 
     // Method to sort an array using Bubble Sort
     // Time Complexity: O(n^2)
-    // Scace Complexity: O(1)
+    // Space Complexity: O(1)
     public static void bubbleSort(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
