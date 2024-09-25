@@ -1,9 +1,14 @@
+// Bubble Sort
+// Brute force approach
+
 import java.util.Scanner;
 
 public class BubbleSort {
 
     // Method to sort an array using Bubble Sort
-    public static int[] bubbleSort(int[] arr) {
+    // Time Complexity: O(n^2)
+    // Scace Complexity: O(1)
+    public static void bubbleSort(int[] arr) {
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length - 1; j++) {
@@ -14,8 +19,6 @@ public class BubbleSort {
                 }
             }
         }
-
-        return arr;
     }
 
     // Driver code
