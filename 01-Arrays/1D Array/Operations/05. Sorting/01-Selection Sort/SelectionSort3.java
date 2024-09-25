@@ -7,7 +7,7 @@ public class SelectionSort3 {
 
     // Method to sort an array using Selection Sort
     // Time Complexity: O(n^2)
-    // Scace Complexity: O(1)
+    // Space Complexity: O(1)
     public static void selectionSort(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
