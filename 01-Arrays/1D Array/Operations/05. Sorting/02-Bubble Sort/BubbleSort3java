@@ -1,11 +1,14 @@
+// Bubble Sort
+// Optimal approach
+
 import java.util.Scanner;
 
-public class BubbleSort2 {
+public class BubbleSort3 {
 
     // Method to sort an array using optimized Bubble Sort
     // Time Complexity: O(n^2)
     // Space Complexity: O(1)
-    public static int[] bubbleSort(int[] arr) {
+    public static void bubbleSort(int[] arr) {
 
         boolean swapped;
 
