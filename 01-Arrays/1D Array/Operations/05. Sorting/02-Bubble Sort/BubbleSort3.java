@@ -28,8 +28,6 @@ public class BubbleSort3 {
                 break;
             }
         }
-
-        return arr;
     }
 
     // Driver code
@@ -41,14 +39,17 @@ public class BubbleSort3 {
 
         int[] arr = new int[size];
 
-        // Input
+        // Input elements
+        System.out.print("Enter elements of the array: ");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
+        // Sort the array
         bubbleSort(arr);
 
         // Print the sorted array
+        System.out.print("The sorted array is: ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
