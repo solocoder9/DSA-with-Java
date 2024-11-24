@@ -1,6 +1,6 @@
 Selection Sort
 --------------
--> Selection sort is one of the sorting algorithms that works by repetedly
+-> Selection sort is one of the sorting algorithms that works by repeatedly
   finding the minimum element from the unsorted part of the array and putting
   it at the beginning of the unsorted array.
 
